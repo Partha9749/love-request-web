@@ -1,0 +1,100 @@
+# M3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine? 💖</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            margin: 50px;
+        }
+        #proposal {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #image {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .yes { background-color: #28a745; color: white; }
+        .no { background-color: #dc3545; color: white; }
+    </style>
+</head>
+<body>
+
+    <h1 id="proposal">Will you be mine forever? 💖</h1>
+    <img id="image" src="https://media1.tenor.com/m/oCChIxM1ZlkAAAAC/milk-mocha-bear.gif" alt="Cute Love GIF">
+    <br>
+    <button class="btn yes" onclick="response(true)">Yes</button>
+    <button class="btn no" id="noBtn" onclick="response(false)">No</button>
+
+    <script>
+        let attempts = 0;
+        let noBtn = document.getElementById("noBtn");
+
+        function response(yes) {
+            if (yes) {
+                document.getElementById("proposal").innerHTML = "Now you are my Forevear❤‍🩹 You are now the CEO of my Heart! 💖";
+                document.getElementById("image").src = "https://media.tenor.com/RV3J29H1frIAAAAi/milk-and-mocha.gif"; // Happy Love GIF
+                noBtn.style.display = "none"; // Hide No button
+            } else {
+                attempts++;
+                if (attempts == 1) {
+                    document.getElementById("proposal").innerHTML = "Oh no! 😢 Please Think Again...";
+                    document.getElementById("image").src = "https://media.tenor.com/oQytEBhwI9AAAAAm/mocha-sebusun.webp";
+                } else if (attempts == 2) {
+                    document.getElementById("proposal").innerHTML = "I can't imagine my life without you... 💔";
+                    document.getElementById("image").src = "https://media.tenor.com/kgQfUEjcSdgAAAAi/milk-and-mocha.gif";
+                } else if (attempts == 3) {
+                    document.getElementById("proposal").innerHTML = "I won’t give up! Will you be mine? 🥺";
+                    document.getElementById("image").src = "https://media.tenor.com/w2xJ2ilc1E0AAAAm/milk-and-mocha.webp";
+                } else if (attempts == 4) {
+                    document.getElementById("proposal").innerHTML = "Pack pack🐥";
+                    document.getElementById("image").src = "https://media.tenor.com/YjXddeX9GgcAAAAM/hug-me.gif";
+                } else if (attempts == 5) {
+                    document.getElementById("proposal").innerHTML = "Please Pick Yes 🥺";
+                    document.getElementById("image").src = "https://media.tenor.com/d2nnuVMvPbcAAAAi/milk-and-mocha-milk-and-mocha-bear.gif";
+                } else if (attempts == 6) {
+                    document.getElementById("proposal").innerHTML = "If You Don't Pick Yes, I'll Start Crying...";
+                    document.getElementById("image").src = "https://media.tenor.com/X0Wj8BSnOW8AAAAm/mocha-crying.webp";
+                } else if (attempts == 7) {
+                    document.getElementById("proposal").innerHTML = " 🥺";
+                    document.getElementById("image").src = "https://media.tenor.com/atec5XFMpgEAAAAM/%E0%B8%87%E0%B8%AD%E0%B8%99.gif";
+                } else {
+                    document.getElementById("proposal").innerHTML = "This is your final chance... Please say Yes! 💖";
+                    document.getElementById("image").src = "https://media.tenor.com/lRfKPZBEXXAAAAAm/milk-and-mocha.webp";
+                    
+                    // No button starts running after 8th attempt
+                    noBtn.setAttribute("onmouseover", "moveNoButton()");
+                }
+            }
+        }
+
+        function moveNoButton() {
+            if (attempts >= 8) { // No button only runs away after 8th attempt
+                let x = Math.random() * window.innerWidth * 0.7;
+                let y = Math.random() * window.innerHeight * 0.7;
+                noBtn.style.position = "absolute";
+                noBtn.style.left = x + "px";
+                noBtn.style.top = y + "px";
+            }
+        }
+    </script>
+
+</body>
+</html>
