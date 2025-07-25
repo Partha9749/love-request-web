@@ -1,4 +1,4 @@
-# M3
+#love-request-web
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,15 +64,12 @@
                     document.getElementById("proposal").innerHTML = "I won’t give up! Will you be mine? 🥺";
                     document.getElementById("image").src = "https://media.tenor.com/w2xJ2ilc1E0AAAAm/milk-and-mocha.webp";
                 } else if (attempts == 4) {
-                    document.getElementById("proposal").innerHTML = "Pack pack🐥";
-                    document.getElementById("image").src = "https://media.tenor.com/YjXddeX9GgcAAAAM/hug-me.gif";
-                } else if (attempts == 5) {
                     document.getElementById("proposal").innerHTML = "Please Pick Yes 🥺";
                     document.getElementById("image").src = "https://media.tenor.com/d2nnuVMvPbcAAAAi/milk-and-mocha-milk-and-mocha-bear.gif";
-                } else if (attempts == 6) {
+                } else if (attempts == 5) {
                     document.getElementById("proposal").innerHTML = "If You Don't Pick Yes, I'll Start Crying...";
                     document.getElementById("image").src = "https://media.tenor.com/X0Wj8BSnOW8AAAAm/mocha-crying.webp";
-                } else if (attempts == 7) {
+                } else if (attempts == 6) {
                     document.getElementById("proposal").innerHTML = " 🥺";
                     document.getElementById("image").src = "https://media.tenor.com/atec5XFMpgEAAAAM/%E0%B8%87%E0%B8%AD%E0%B8%99.gif";
                 } else {
