@@ -13,9 +13,12 @@ A cute and fun love proposal webpage made with HTML, CSS, and JavaScript, featur
 
 ![Preview GIF](https://media1.tenor.com/m/oCChIxM1ZlkAAAAC/milk-mocha-bear.gif)
 
+🌐 **Live Demo:** [https://love-request-web.netlify.app/](https://love-request-web.netlify.app/)
+
+---
+
 ## 🛠️ How to Use
 
-1. Download or clone this repo
-2. Open `index.html` in any browser
+1. Download or clone this repo  
+2. Open `index.html` in any browser  
 3. Click “Yes” or try to say “No” 😄
-
